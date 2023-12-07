@@ -2,15 +2,15 @@
   Створіть функцію (isWeekend), яка приймає день тижня (з вашого enum)
   і повертає boolean значення, що вказує, чи це день робочий чи вихідний.
 */
-enum Week {
-  MONDAY,
-  TUESDAY,
-  WEDNESDAY,
-  THURSDAY,
-  FRIDAY,
-  SATURDAY,
-  SUNDAY,
+enum dayOfWeek {
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
 }
-function isWeekend(day: Week): boolean {
-  return day === Week.SATURDAY || day === Week.SUNDAY;
+function isWeekend(day: dayOfWeek): boolean {
+  return day === dayOfWeek.Saturday || day === dayOfWeek.Sunday;
 }
